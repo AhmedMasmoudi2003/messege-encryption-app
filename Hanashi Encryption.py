@@ -18,7 +18,7 @@ def encryption():
             y += chr(ord(x[i])-1)
         elif ord(x[i].upper())%2==1:#negatif
             y += chr(ord(x[i])+1)
-        
+    y = y.strip()
     field.delete(1.0,END)
     field.insert(END,y)
     
@@ -32,7 +32,7 @@ def decryption():
             y += chr(ord(x[i])-1)
         elif ord(x[i].upper())%2==1:#negatif
             y += chr(ord(x[i])+1)
-        
+    y = y.strip()
     field.delete(1.0,END)
     field.insert(END,y)
     
